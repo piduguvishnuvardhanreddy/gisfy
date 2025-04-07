@@ -1,0 +1,172 @@
+/* Base Styles - Extra Small (<576px) */
+.features-section {
+  padding: 20px 16px;
+  background-color: #f9f9f9;
+}
+
+.features-heading {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+}
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.feature-card h3 {
+  font-size: 16px;
+  margin: 10px 0 6px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.about-section {
+  padding: 30px 16px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.about-text {
+  font-size: 14px;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Small (≥576px) */
+@media (min-width: 576px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-heading,
+  .about-heading {
+    font-size: 22px;
+  }
+
+  .feature-card h3 {
+    font-size: 18px;
+  }
+
+  .feature-card p {
+    font-size: 14px;
+  }
+}
+
+/* Medium (≥768px) */
+@media (min-width: 768px) {
+  .features-section,
+  .about-section {
+    padding: 40px 40px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .feature-card {
+    text-align: left;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .about-heading {
+    font-size: 24px;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+}
+
+/* Large (≥992px) */
+@media (min-width: 992px) {
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .features-heading {
+    font-size: 26px;
+  }
+
+  .feature-card {
+    padding: 24px;
+  }
+
+  .feature-card h3 {
+    font-size: 20px;
+  }
+
+  .feature-card p {
+    font-size: 15px;
+  }
+}
+
+/* Extra Large (≥1200px) */
+@media (min-width: 1200px) {
+  .features-section,
+  .about-section {
+    padding: 60px 80px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .feature-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .about-heading {
+    font-size: 28px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+}

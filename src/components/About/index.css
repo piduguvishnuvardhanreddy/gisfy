@@ -1,0 +1,77 @@
+/* Base Styles - Extra Small (<576px) */
+.about-section {
+  padding: 24px 16px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.about-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 16px;
+}
+
+.about-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Small (≥576px) */
+@media (min-width: 576px) {
+  .about-heading {
+    font-size: 22px;
+  }
+
+  .about-text {
+    font-size: 15px;
+    max-width: 85%;
+  }
+}
+
+/* Medium (≥768px) */
+@media (min-width: 768px) {
+  .about-section {
+    padding: 40px 40px;
+  }
+
+  .about-heading {
+    font-size: 24px;
+  }
+
+  .about-text {
+    font-size: 15.5px;
+    max-width: 80%;
+  }
+}
+
+/* Large (≥992px) */
+@media (min-width: 992px) {
+  .about-heading {
+    font-size: 26px;
+  }
+
+  .about-text {
+    font-size: 16px;
+    max-width: 75%;
+  }
+}
+
+/* Extra Large (≥1200px) */
+@media (min-width: 1200px) {
+  .about-section {
+    padding: 60px 120px;
+  }
+
+  .about-heading {
+    font-size: 28px;
+  }
+
+  .about-text {
+    font-size: 17px;
+    max-width: 65%;
+  }
+}
