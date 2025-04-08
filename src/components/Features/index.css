@@ -1,84 +1,75 @@
-/* Base Styles - Extra Small (<576px) */
+/* Main section styling */
 .features-section {
-  padding: 20px 16px;
-  background-color: #f9f9f9;
+  padding: 2rem;
+  background-color: #ffffff;
+  font-family: 'Poppins', 'Inter', sans-serif;
 }
 
 .features-heading {
-  font-size: 20px;
   text-align: center;
-  margin-bottom: 20px;
-  font-weight: bold;
-  color: #222;
+  font-size: 26px; /* Between 24–28px */
+  font-weight: 700;
+  color: #007C88;
+  margin-bottom: 2rem;
 }
 
 .features-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr); /* Always 2 cards */
 }
 
 .feature-card {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 16px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+  align-items: flex-start;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1.25rem;
+  gap: 1rem;
+  background-color: #fafafa;
+  transition: box-shadow 0.3s ease;
 }
 
 .feature-card:hover {
-  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .feature-icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
 }
 
 .feature-card h3 {
-  font-size: 16px;
-  margin: 10px 0 6px;
+  font-size: 19px; /* Subheading */
+  font-weight: 700;
+  color: #212121;
+  margin: 0 0 4px;
+  font-family: 'Poppins', 'Inter', sans-serif;
 }
 
 .feature-card p {
-  font-size: 14px;
-  color: #555;
+  font-size: 15px; /* Body text */
+  font-weight: 400;
+  color: #67717D;
+  line-height: 1.6;
+  margin: 0;
+  font-family: 'Poppins', 'Inter', sans-serif;
 }
 
-.about-section {
-  padding: 30px 16px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.about-heading {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 16px;
-  color: #222;
-}
-
-.about-text {
-  font-size: 14px;
-  color: #444;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Small (≥576px) */
-@media (min-width: 576px) {
+/* Enforce 2-column grid always */
+@media (max-width: 768px) {
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
+}
 
-  .features-heading,
-  .about-heading {
-    font-size: 22px;
+@media (max-width: 480px) {
+  .feature-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .feature-card h3 {
@@ -90,83 +81,41 @@
   }
 }
 
-/* Medium (≥768px) */
-@media (min-width: 768px) {
-  .features-section,
-  .about-section {
-    padding: 40px 40px;
-  }
+/* About section consistency */
+.about-section {
+  padding: 32px 16px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Poppins', 'Inter', sans-serif;
+}
 
-  .features-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.about-heading {
+  color: #007C88;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
 
-  .feature-card {
-    text-align: left;
-    align-items: flex-start;
-    flex-direction: row;
-    gap: 16px;
-  }
+.about-text {
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.6;
+}
 
-  .feature-icon {
-    width: 60px;
-    height: 60px;
-  }
-
-  .about-heading {
-    font-size: 24px;
-  }
-
+@media (max-width: 768px) {
   .about-text {
-    font-size: 15px;
+    font-size: 1rem;
+    padding: 0 1rem;
   }
 }
 
-/* Large (≥992px) */
-@media (min-width: 992px) {
-  .features-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-
-  .features-heading {
-    font-size: 26px;
-  }
-
-  .feature-card {
-    padding: 24px;
-  }
-
-  .feature-card h3 {
-    font-size: 20px;
-  }
-
-  .feature-card p {
-    font-size: 15px;
-  }
-}
-
-/* Extra Large (≥1200px) */
-@media (min-width: 1200px) {
-  .features-section,
-  .about-section {
-    padding: 60px 80px;
-  }
-
-  .features-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .feature-icon {
-    width: 70px;
-    height: 70px;
-  }
-
+@media (max-width: 480px) {
   .about-heading {
-    font-size: 28px;
+    font-size: 1.5rem;
   }
 
   .about-text {
-    font-size: 16px;
+    font-size: 0.95rem;
   }
 }

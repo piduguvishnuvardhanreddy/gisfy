@@ -1,8 +1,13 @@
 /* Base Styles - Extra Small (<576px) */
 .footer {
-  background-color: #e89393;
+  background-color: #5ac6cb  ;
   padding: 20px;
   font-family: sans-serif;
+}
+
+.gpara {
+  color: #ffffff;
+  font-family: Poppins, sans-serif;
 }
 
 .footer-top {

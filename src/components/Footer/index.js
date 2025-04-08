@@ -16,11 +16,11 @@ const  Footer = () => {
         <div className="footer-center">
           <div className="footer-info">
             <img src={Location} alt="Location" className="icon" />
-            <p>4th Block, Room No:208, First Floor,<br />A.P Secretariat, Velagapudi.</p>
+            <p className="gpara">4th Block, Room No:208, First Floor,<br />A.P Secretariat, Velagapudi.</p>
           </div>
           <div className="footer-info">
             <img src={Call} alt="Location" className="icon" />
-            <p><strong>0863-2444505</strong><br />Got Questions? Call us 24/7</p>
+            <p className="gpara"><strong>0863-2444505</strong><br />Got Questions? Call us 24/7</p>
           </div>
         </div>
 
@@ -36,8 +36,8 @@ const  Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>2025 © All Rights Reserved By AP DigiVerify, IT, Electronics & Communications Department, Government Of Andhra Pradesh.</p>
-        <p>Developed and Maintained by <span className="gisfy">GISFY</span></p>
+        <p className="gpara">2025 © All Rights Reserved By AP DigiVerify, IT, Electronics & Communications Department, Government Of Andhra Pradesh.</p>
+        <p className="gpara">Developed and Maintained by <span className="gisfy">GISFY</span></p>
       </div>
     </footer>
   );

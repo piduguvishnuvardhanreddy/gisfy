@@ -25,25 +25,25 @@ const Header = () => {
           <img src={logoGoverment} alt="AP DigiVerify" className="logo" />
           </div>
         </div>
-        <nav className="navbar">
-              <div className='navIcon'>
-                <img src={FeaturesIcon} alt='Features' className='iconSize' />
-                <span>Features</span>
-              </div>
-              <div className='navIcon'>
-                <img src={AboutIcon} alt='Features'  className='iconSize' />
-                <span>About Us</span>
-              </div>
-              <div className='navIcon'>
-                <img src={CallIcon} alt='Features'  className='iconSize' />
-                <span>Contact</span>
-              </div>
-              <div className='navIcon'>
-                <img src={VectorIcon} alt='Features'  className='iconSize' />
-                <span>LOGIN</span>
-              </div>
-        </nav>
         </header>
+        <nav className="navbar">
+        <div className='navIcon'>
+          <img src={FeaturesIcon} alt='Features' className='iconSize' />
+          <span className='featuresColor' >Features</span>
+        </div>
+        <div className='navIcon'>
+          <img src={AboutIcon} alt='Features'  className='iconSize' />
+          <span className='featuresColor'>About Us</span>
+        </div>
+        <div className='navIcon'>
+          <img src={CallIcon} alt='Features'  className='iconSize' />
+          <span className='featuresColor'>Contact</span>
+        </div>
+        <div className='navIcon'>
+          <img src={VectorIcon} alt='Features'  className='iconSize' />
+          <span className='featuresColor'>Login</span>
+        </div>
+      </nav>
       </div>
       <Carousel>
             <img src={Silder1} alt='logo1' />
